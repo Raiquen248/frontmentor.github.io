@@ -102,5 +102,24 @@ body {
     display: flex;
     align-items: center;
     justify-content: start;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
+}
+
+.card__creator__images, .card__creator__description {
+    margin-right: 1.5rem;
+}
+
+.card__creator__image__jules {
+    width: 5rem;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+
+.card__creator__text {
+    color:hsl(215, 51%, 70%)
+}
+
+.card__creator__text--white {
+    color: white;
 }
