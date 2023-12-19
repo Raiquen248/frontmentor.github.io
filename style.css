@@ -40,14 +40,45 @@ body {
     
 }
 
-.card__image {
+.card__box {
+    margin-bottom: 20px; 
+    position: relative;
+    cursor: pointer;
+}
+
+.card__box img {
     border-radius: 15px;
+    width: 100%;
+}
+
+.card__image-hover {
+    position: absolute;  left: 0; top: 0; right: 0; bottom: 0;
+    border-radius: 15px;
+    background-color: hsla(178, 100%, 50%, 0.479);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.card__box .card__image .card__image-hover img {
+    width: 47px;
+}
+
+.card__image-hover:hover {
+    opacity: 1;
 }
 
 .card__title h1{
     font-size: 2.9rem;
     color: var(--white);
     padding-top: 1.2rem;
+}
+
+.card__title h1:hover {
+    cursor: pointer ;
+    color: var(--cyan)
 }
 
 .card__description {
@@ -116,10 +147,6 @@ body {
 
 
 
-
-
-
-
 .card__line {
     border-bottom: 1px groove var(--very-dark-blue-line);
     width: 100%;
@@ -153,3 +180,9 @@ body {
 .card__creator__text--white {
     color: var(--white);
 }
+.card__creator__text--white:hover {
+    cursor: pointer ;
+    color: var(--cyan)
+    
+}
+
