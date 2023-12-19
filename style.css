@@ -46,24 +46,24 @@ body {
     cursor: pointer;
 }
 
-.card__box img {
+.card__box .card__image img{
     border-radius: 15px;
     width: 100%;
+    display: block;
 }
 
 .card__image-hover {
-    position: absolute;  left: 0; top: 0; right: 0; bottom: 0;
-    border-radius: 15px;
-    background-color: hsla(178, 100%, 50%, 0.479);
-    display: flex;
-    justify-content: center;
+    position: absolute;     left: 0; top: 0; right: 0; bottom: 0;
+    background-color: hsla(178, 100%, 50%, 0.479);  
+    border-radius: 10px;
+    display: flex; 
+    justify-content: center; 
     align-items: center;
-    opacity: 0;
-    transition: all 0.5s;
+    opacity: 0;     transition: all 0.5s;
 }
 
-.card__box .card__image .card__image-hover img {
-    width: 47px;
+.card__image-hover img {
+    width: 5rem;
 }
 
 .card__image-hover:hover {
