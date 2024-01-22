@@ -26,6 +26,7 @@ body {
     align-items: center;
     background-color: var(--very-dark-blue-bg);
     min-height: 100vh;
+    
 }
 
 .card {
@@ -33,37 +34,44 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--very-dark-blue-gb);
-    width: 40rem;
+    width: 20rem;
     border-radius: 3%; 
-    padding: 2.5rem;
+    padding: 1.25rem;
    
     
 }
 
 .card__box {
-    margin-bottom: 20px; 
+    margin-bottom: 10px; 
     position: relative;
     cursor: pointer;
 }
 
 .card__box .card__image img{
-    border-radius: 15px;
+    border-radius: 7,5px;
     width: 100%;
     display: block;
 }
 
+.card__image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
 .card__image-hover {
     position: absolute;     left: 0; top: 0; right: 0; bottom: 0;
-    background-color: hsla(178, 100%, 50%, 0.479);  
+    background-color: hsla(178, 100%, 50%, 0.16);  
     border-radius: 10px;
     display: flex; 
     justify-content: center; 
     align-items: center;
-    opacity: 0;     transition: all 0.5s;
+    opacity: 0;   
+    transition: all 0.5s;
 }
 
 .card__image-hover img {
-    width: 5rem;
+    width: 2,5rem;
 }
 
 .card__image-hover:hover {
@@ -71,9 +79,9 @@ body {
 }
 
 .card__title h1{
-    font-size: 2.9rem;
+    font-size: 1.45rem;
     color: var(--white);
-    padding-top: 1.2rem;
+    padding-top: 0.6rem;
 }
 
 .card__title h1:hover {
@@ -82,8 +90,8 @@ body {
 }
 
 .card__description {
-    padding-top: 1.2rem;
-    font-size: 1.9rem;
+    padding-top: 0.6rem;
+    font-size: 0.95rem;
     color: var(--soft-blue);
     
 }
@@ -106,21 +114,21 @@ body {
 .card__values_eth {
     display: flex;
     align-items: center;
-    padding-top: 1.5rem;
+    padding-top: 0.75rem;
     
 }
 
 .card__values__eth__image {
-    width: 1.5rem; 
+    width: 0.75rem; 
     height: auto; 
-    margin-right: 0.5rem;
+    margin-right: 0.25rem;
 }
 
 .card__values__eth__price {
     color: var(--cyan);
     font-weight: 700;
-    font-size: 1.7rem;
-    padding-left: 7px;
+    font-size: 0.85rem;
+    padding-left: 3.5px;
 }
 
 
@@ -129,28 +137,28 @@ body {
 .card__values_timer {
     display: flex;
     align-items: center;
-    padding-top: 1.5rem;
+    padding-top: 0.75rem;
    
 }
 
 .card__values_timer_images {
-    width: 2rem; 
+    width: 1rem; 
     height: auto; 
-    margin-right: 0.5rem;
+    margin-right: 0.25rem;
 }
 
 .card__values__timer__text {
-    font-size: 2rem;
-    padding-left: 7px;
+    font-size: 1rem;
+    padding-left: 3.5px;
     color: var(--soft-blue);
 }
 
 
 
 .card__line {
-    border-bottom: 1px groove var(--very-dark-blue-line);
+    border-bottom: 0.5px groove var(--very-dark-blue-line);
     width: 100%;
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
 
 
@@ -158,22 +166,22 @@ body {
     display: flex;
     align-items: center;
     justify-content: start;
-    padding-top: 1.5rem;
+    padding-top: 0.75rem;
 }
 
 .card__creator__images, .card__creator__description {
-    margin-right: 1.5rem;
+    margin-right: 0.75rem;
 }
 
 .card__creator__image__jules {
-    width: 5rem;
+    width: 2.5rem;
     border-radius: 50%;
-    border: 2px solid var(--white);
+    border: 1px solid var(--white);
 }
 
 
 .card__creator__text {
-    font-size: 1.8rem;
+    font-size: 0.9rem;
     color:var(--soft-blue);
 }
 
@@ -185,4 +193,5 @@ body {
     color: var(--cyan)
     
 }
+
 
